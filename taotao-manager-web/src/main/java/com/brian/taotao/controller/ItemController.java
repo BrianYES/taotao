@@ -59,11 +59,12 @@ public class ItemController {
         return itemService.updateItem(item, desc);
     }
 
-//    @RequestMapping(value = "/delete", method = RequestMethod.POST)
-//    public void deleteItems(List ids) {
-//
-//    }
-//
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult deleteItems(String ids) {
+        return itemService.deleteItems(ids);
+    }
+
 //    // 下架
 //    @RequestMapping(value = "/instock", method = RequestMethod.POST)
 //    public void deleteItems(List ids) {

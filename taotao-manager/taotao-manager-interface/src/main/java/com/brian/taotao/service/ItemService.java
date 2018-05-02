@@ -43,4 +43,13 @@ public interface ItemService {
      * @return TaotaoResult
      */
     TaotaoResult updateItem(Item item, String desc);
+
+
+    /**
+     * 删除商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    TaotaoResult deleteItems(String ids);
 }

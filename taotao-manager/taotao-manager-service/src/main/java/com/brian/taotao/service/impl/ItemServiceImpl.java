@@ -137,4 +137,18 @@ public class ItemServiceImpl implements ItemService {
 
         return TaotaoResult.ok();
     }
+
+    /**
+     * 删除商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    public TaotaoResult deleteItems(String ids) {
+        String[] values = ids.split(",");
+        for (String value : values) {
+            itemMapper.deleteByPrimaryKey(Long.parseLong(value));
+        }
+        return TaotaoResult.ok();
+    }
 }
