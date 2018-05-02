@@ -52,4 +52,20 @@ public interface ItemService {
      * @return TaotaoResult
      */
     TaotaoResult deleteItems(String ids);
+
+    /**
+     * 下架商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    TaotaoResult instockItems(String ids);
+
+    /**
+     * 上架商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    TaotaoResult reshelfItems(String ids);
 }

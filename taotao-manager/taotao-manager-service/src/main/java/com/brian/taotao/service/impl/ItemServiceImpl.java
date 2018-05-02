@@ -151,4 +151,40 @@ public class ItemServiceImpl implements ItemService {
         }
         return TaotaoResult.ok();
     }
+
+    /**
+     * 下架商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    public TaotaoResult instockItems(String ids) {
+        String[] values = ids.split(",");
+        for (String value : values) {
+            Item item = new Item();
+            item.setId(Long.parseLong(value));
+            // 1-正常，2-下架，3-删除
+            item.setStatus((byte) 2);
+            itemMapper.updateByPrimaryKeySelective(item);
+        }
+        return TaotaoResult.ok();
+    }
+
+    /**
+     * 上架商品
+     *
+     * @param ids 商品ID，多个用逗号分隔
+     * @return TaotaoResult
+     */
+    public TaotaoResult reshelfItems(String ids) {
+        String[] values = ids.split(",");
+        for (String value : values) {
+            Item item = new Item();
+            item.setId(Long.parseLong(value));
+            // 1-正常，2-下架，3-删除
+            item.setStatus((byte) 1);
+            itemMapper.updateByPrimaryKeySelective(item);
+        }
+        return TaotaoResult.ok();
+    }
 }

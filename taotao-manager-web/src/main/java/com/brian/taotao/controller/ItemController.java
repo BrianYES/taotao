@@ -65,15 +65,15 @@ public class ItemController {
         return itemService.deleteItems(ids);
     }
 
-//    // 下架
-//    @RequestMapping(value = "/instock", method = RequestMethod.POST)
-//    public void deleteItems(List ids) {
-//
-//    }
-//
-//    // 上架
-//    @RequestMapping(value = "/reshelf", method = RequestMethod.POST)
-//    public void deleteItems(List ids) {
-//
-//    }
+    @RequestMapping(value = "/instock", method = RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult instockItems(String ids) {
+        return itemService.instockItems(ids);
+    }
+
+    @RequestMapping(value = "/reshelf", method = RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult reshelfItems(String ids) {
+        return itemService.reshelfItems(ids);
+    }
 }
