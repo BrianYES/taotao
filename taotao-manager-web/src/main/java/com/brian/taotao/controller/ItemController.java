@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.brian.taotao.common.pojo.EasyUIDataGridResult;
+import com.brian.taotao.common.pojo.TaotaoResult;
 import com.brian.taotao.pojo.Item;
 import com.brian.taotao.service.ItemService;
 
@@ -27,5 +29,12 @@ public class ItemController {
     @ResponseBody
     public EasyUIDataGridResult getItemList(int page, int rows) {
         return itemService.getItemList(page, rows);
+    }
+
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult addItem(Item item, String desc) {
+        return itemService.addItem(item, desc);
     }
 }
