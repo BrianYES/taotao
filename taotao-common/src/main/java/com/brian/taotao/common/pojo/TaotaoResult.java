@@ -26,6 +26,10 @@ public class TaotaoResult implements Serializable {
         return build(200, "OK");
     }
 
+    public static TaotaoResult ok(Object data) {
+        return build(200, "OK", data);
+    }
+
     public Integer getStatus() {
         return status;
     }
