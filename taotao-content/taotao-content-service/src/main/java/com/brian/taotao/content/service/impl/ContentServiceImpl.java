@@ -1,11 +1,13 @@
 package com.brian.taotao.content.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.brian.taotao.common.pojo.EasyUIDataGridResult;
+import com.brian.taotao.common.pojo.TaotaoResult;
 import com.brian.taotao.content.service.ContentService;
 import com.brian.taotao.dao.ContentMapper;
 import com.brian.taotao.pojo.Content;
@@ -32,5 +34,29 @@ public class ContentServiceImpl implements ContentService {
         result.setRows(contentList);
 
         return result;
+    }
+
+    public TaotaoResult addContent(Content content) {
+        Date now = new Date();
+        content.setCreated(now);
+        content.setUpdated(now);
+        contentMapper.insertSelective(content);
+
+        return TaotaoResult.ok();
+    }
+
+    public TaotaoResult updateContent(Content content) {
+        Date now = new Date();
+        content.setUpdated(now);
+        contentMapper.updateByPrimaryKeyWithBLOBs(content);
+        return TaotaoResult.ok();
+    }
+
+    public TaotaoResult deleteContent(String ids) {
+        String[] values = ids.split(",");
+        for (String value : values) {
+            contentMapper.deleteByPrimaryKey(Long.parseLong(value));
+        }
+        return TaotaoResult.ok();
     }
 }
