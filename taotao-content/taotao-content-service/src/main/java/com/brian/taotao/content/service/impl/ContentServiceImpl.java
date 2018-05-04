@@ -36,6 +36,15 @@ public class ContentServiceImpl implements ContentService {
         return result;
     }
 
+    public List<Content> getContentList(long cid) {
+        ContentExample example = new ContentExample();
+        ContentExample.Criteria criteria = example.createCriteria();
+        criteria.andCategoryIdEqualTo(cid);
+        List<Content> contentList = contentMapper.selectByExampleWithBLOBs(example);
+
+        return contentList;
+    }
+
     public TaotaoResult addContent(Content content) {
         Date now = new Date();
         content.setCreated(now);
@@ -48,7 +57,7 @@ public class ContentServiceImpl implements ContentService {
     public TaotaoResult updateContent(Content content) {
         Date now = new Date();
         content.setUpdated(now);
-        contentMapper.updateByPrimaryKeyWithBLOBs(content);
+        contentMapper.updateByPrimaryKeySelective(content);
         return TaotaoResult.ok();
     }
 
