@@ -32,7 +32,7 @@
 
     <!-- DAO的包扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.brian.taotao.dao" />
+        <property name="basePackage" value="com.brian.taotao.dao,com.brian.taotao.search.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 </beans>
