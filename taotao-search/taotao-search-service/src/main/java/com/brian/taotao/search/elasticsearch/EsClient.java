@@ -38,9 +38,7 @@ public class EsClient {
         }
     }
 
-    public void createIndex(String indexName) {
-        CreateIndexResponse createIndexResponse = client.admin().indices().prepareCreate(indexName).execute().actionGet();
-        PutMappingRequestBuilder putMappingRequestBuilder = client.admin().indices().preparePutMapping(indexName);
-        PutMappingResponse putMappingResponse = putMappingRequestBuilder.setType("").setSource().execute().actionGet();
+    public TransportClient getClient() {
+        return client;
     }
 }

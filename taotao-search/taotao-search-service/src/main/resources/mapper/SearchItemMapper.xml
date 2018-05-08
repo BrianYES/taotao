@@ -8,7 +8,7 @@
         <result column="price" jdbcType="BIGINT" property="price" />
         <result column="image" jdbcType="VARCHAR" property="image" />
         <result column="category_name" jdbcType="VARCHAR" property="categoryName" />
-        <result column="item_desc" jdbcType="TEXT" property="itemDesc" />
+        <result column="item_desc" jdbcType="BLOB" property="itemDesc" />
     </resultMap>
 
     <select id="getItemList" resultMap="BaseResultMap">

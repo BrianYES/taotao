@@ -42,4 +42,6 @@
     <dubbo:reference interface="com.brian.taotao.content.service.ContentService" id="contentService" />
     <dubbo:reference interface="com.brian.taotao.search.service.SearchItemService" id="searchItemService" />
 
+    <dubbo:consumer timeout="600000" check="false" />
+
 </beans>
