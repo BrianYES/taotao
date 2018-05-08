@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="esClientBuilder" class="com.brian.taotao.search.elasticsearch.EsClientBuilder" init-method="init"
+    <bean id="esClient" class="com.brian.taotao.search.elasticsearch.EsClient" init-method="init"
           destroy-method="close">
     </bean>
 </beans>

@@ -2,8 +2,6 @@ package com.brian.taotao.common.pojo;
 
 import java.io.Serializable;
 
-import com.brian.taotao.common.utils.JsonUtil;
-
 public class SearchItem implements Serializable {
 
     private String id;
@@ -68,10 +66,5 @@ public class SearchItem implements Serializable {
 
     public void setItemDesc(String itemDesc) {
         this.itemDesc = itemDesc;
-    }
-
-    @Override
-    public String toString() {
-        return JsonUtil.objectToJson(this).toString();
     }
 }

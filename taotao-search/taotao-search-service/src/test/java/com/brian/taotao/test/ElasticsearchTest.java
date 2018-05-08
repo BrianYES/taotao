@@ -31,6 +31,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.brian.taotao.common.pojo.SearchItem;
+import com.brian.taotao.common.utils.JsonUtil;
 
 public class ElasticsearchTest {
 
@@ -73,9 +74,8 @@ public class ElasticsearchTest {
         }
 
         for (SearchItem searchItem : itemList) {
-//            System.out.println(searchItem.toString());
             IndexRequestBuilder indexRequestBuilder = client.prepareIndex("test", "test", searchItem.getId());
-            indexRequestBuilder.setSource(searchItem.toString(), XContentType.JSON);
+            indexRequestBuilder.setSource(JsonUtil.objectToJson(searchItem), XContentType.JSON);
             bulk.add(indexRequestBuilder);
         }
 

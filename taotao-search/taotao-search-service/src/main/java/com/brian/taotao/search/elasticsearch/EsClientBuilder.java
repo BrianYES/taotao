@@ -1,15 +1,13 @@
 package com.brian.taotao.search.elasticsearch;
 
 import java.net.InetAddress;
-import java.util.Map;
 
 import org.elasticsearch.client.Client;
-import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.TransportAddress;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
-public class EsClientBuilder implements EsClient {
+public class EsClientBuilder {
 
     private Client client;
 
@@ -39,4 +37,6 @@ public class EsClientBuilder implements EsClient {
     public Client getClient() {
         return client;
     }
+
+
 }

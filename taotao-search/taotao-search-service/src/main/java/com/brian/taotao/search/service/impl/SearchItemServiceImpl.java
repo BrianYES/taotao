@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import com.brian.taotao.common.pojo.SearchItem;
 import com.brian.taotao.common.pojo.TaotaoResult;
 import com.brian.taotao.search.dao.SearchItemMapper;
-import com.brian.taotao.search.elasticsearch.EsClientBuilder;
+import com.brian.taotao.search.elasticsearch.EsClient;
 
 @Service
 public class SearchItemServiceImpl {
@@ -26,23 +26,23 @@ public class SearchItemServiceImpl {
     private SearchItemMapper searchItemMapper;
 
     @Autowired
-    private EsClientBuilder esClientBuilder;
+    private EsClient esClient;
 
     public TaotaoResult importItemsToIndex() throws Exception {
-        BulkRequestBuilder bulk = esClientBuilder.getClient().prepareBulk();
-
-        List<SearchItem> itemList = searchItemMapper.getItemList();
-        for (SearchItem searchItem : itemList) {
-            IndexRequestBuilder indexRequestBuilder = esClientBuilder.getClient().prepareIndex("msg", "tweet", "1");
-            indexRequestBuilder.setSource(searchItem.toString());
-
-            bulk.add(indexRequestBuilder);
-        }
-
-        if (bulk.get().hasFailures()) {
-            for (BulkItemResponse bulkItemResponse : bulk.get().getItems()) {
-            }
-        }
+//        BulkRequestBuilder bulk = esClientBuilder.getClient().prepareBulk();
+//
+//        List<SearchItem> itemList = searchItemMapper.getItemList();
+//        for (SearchItem searchItem : itemList) {
+//            IndexRequestBuilder indexRequestBuilder = esClientBuilder.getClient().prepareIndex("msg", "tweet", "1");
+//            indexRequestBuilder.setSource(searchItem.toString());
+//
+//            bulk.add(indexRequestBuilder);
+//        }
+//
+//        if (bulk.get().hasFailures()) {
+//            for (BulkItemResponse bulkItemResponse : bulk.get().getItems()) {
+//            }
+//        }
 
         return TaotaoResult.ok();
     }
