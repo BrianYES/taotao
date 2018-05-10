@@ -21,9 +21,13 @@ import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.TransportAddress;
+import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.MatchQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.junit.After;
@@ -115,13 +119,30 @@ public class ElasticsearchTest {
 
     @Test
     public void testSearch() {
-        SearchResponse response = client.prepareSearch("msg")
-                .setTypes("tweet")
-                .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+        MatchQueryBuilder query = QueryBuilders.matchQuery("title", "Apple");
+        SearchResponse response = client.prepareSearch("taotao")
+                .setTypes("item")
+                .setQuery(query)
+                .setFrom(0)
+                .setSize(10)
+                .setScroll(new TimeValue(60000))
                 .get();
 
-        System.out.println(response.getHits().getTotalHits());
+        System.out.println("scrollId:" + response.getScrollId());
+
+        System.out.println("搜索总数:" + response.getHits().getTotalHits());
         for (SearchHit searchHit : response.getHits().getHits()) {
+            System.out.println(searchHit.getSourceAsString());
+        }
+
+        SearchResponse response1 = client.prepareSearchScroll(response.getScrollId())
+                .setScroll(new TimeValue(60000))
+                .get();
+
+        System.out.println("scrollId2:" + response1.getScrollId());
+
+        System.out.println("搜索总数2:" + response1.getHits().getTotalHits());
+        for (SearchHit searchHit : response1.getHits().getHits()) {
             System.out.println(searchHit.getSourceAsString());
         }
     }

@@ -26,8 +26,8 @@
     </bean>
 
     <!--引用dubbo服务-->
-    <dubbo:application name="taotao-portal-web"/>
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
-    <!--<dubbo:reference interface="com.brian.taotao.search.service.SearchItemService" id="contentService" />-->
+    <dubbo:application name="taotao-search-web"/>
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" timeout="300000"/>
+    <dubbo:reference interface="com.brian.taotao.search.service.SearchService" id="searchService" />
 
 </beans>

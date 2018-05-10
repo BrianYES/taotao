@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="taotao-manager-web:war exploded" />
+      <artifact name="taotao-portal-web:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f35f6ef7-946d-4422-832c-a309ec7b8485" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml" />
-      <change beforePath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/elasticsearch/EsClient.java" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/elasticsearch/EsClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/taotao-search-web/src/main/java/com/brian/taotao/search/controller/SearchController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-interface/src/main/java/com/brian/taotao/search/service/SearchService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/base-v1.js" afterPath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/base-v1.js" />
+      <change beforePath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/search_main.js" afterPath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/search_main.js" />
+      <change beforePath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/jsp/index.jsp" afterPath="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/jsp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/base-v1.js" afterPath="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/base-v1.js" />
+      <change beforePath="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/search_main.js" afterPath="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/search_main.js" />
       <change beforePath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/mapper/SearchItemMapper.xml" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/mapper/SearchItemMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml" />
+      <change beforePath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java" afterPath="$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/taotao-parent/target/" />
     <ignored path="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/target/" />
@@ -37,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchItemServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java">
+      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/java/com/brian/taotao/search/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,61 +57,116 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-dao.xml">
+      <file leaf-file-name="applicationContext-service.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+            <state relative-caret-position="357">
+              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base-v1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/base-v1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+              <folding>
+                <marker date="1525920872903" expanded="true" signature="6815:6848" ph="..." />
+                <marker date="1525920872903" expanded="true" signature="7092:7106" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
+        <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="38" column="87" lean-forward="false" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-service.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/properties/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/pom.xml">
+      <file leaf-file-name="SearchServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
-              <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="267">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1677#1689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/search_main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="1288" column="44" lean-forward="false" selection-start-line="1288" selection-start-column="44" selection-end-line="1288" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexManageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/brian/taotao/controller/IndexManageController.java">
+      <file leaf-file-name="search_main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/search_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="4587">
+              <caret line="1284" column="24" lean-forward="true" selection-start-line="1284" selection-start-column="24" selection-end-line="1284" selection-end-column="24" />
+              <folding>
+                <marker date="1525923814562" expanded="true" signature="32686:32703" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="33842:33859" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="39259:39272" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="39391:39404" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="39523:39536" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="61732:61738" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="61738:61744" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="61755:61761" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="61761:61767" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="61767:61773" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="61773:61779" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="69079:69186" ph="..." />
+                <marker date="1525923814562" expanded="true" signature="103064:103068" ph="&amp;lt;" />
+                <marker date="1525923814562" expanded="true" signature="103364:103368" ph="&amp;gt;" />
+                <marker date="1525923814562" expanded="true" signature="103727:103733" ph="&amp;nbsp;" />
+                <marker date="1525923814562" expanded="true" signature="104262:104266" ph="&amp;lt;" />
+                <marker date="1525923814562" expanded="true" signature="104562:104566" ph="&amp;gt;" />
+                <marker date="1525923814562" expanded="true" signature="104925:104931" ph="&amp;nbsp;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-es.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-es.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchItem.java">
+      <file leaf-file-name="SearchService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-interface/src/main/java/com/brian/taotao/search/service/SearchService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="28" />
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -114,9 +177,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -136,6 +199,9 @@
       <find>127.0.0.1</find>
       <find>@Override</find>
       <find>port=&quot;20882&quot;</find>
+      <find>DnF1ZXJ5VGhlbkZldGNoAgAAAAAAAAFhFnBLVlZwbHpxUnh1TWI3cHI0S0JoRncAAAAAAAABYhZwS1ZWcGx6cVJ4dU1iN3ByNEtCaEZ3</find>
+      <find>${</find>
+      <find>8082</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,15 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/taotao-content/taotao-content-interface/src/main/java/com/brian/taotao/content/service/ContentCategoryService.java" />
-        <option value="$PROJECT_DIR$/taotao-content/taotao-content-service/src/main/java/com/brian/taotao/content/service/impl/ContentCategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/content-category.jsp" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/content.jsp" />
-        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/brian/taotao/pojo/Content.java" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/content-add.jsp" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/content-edit.jsp" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/brian/taotao/controller/ContentController.java" />
-        <option value="$PROJECT_DIR$/taotao-portal-web/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-content/taotao-content-interface/src/main/java/com/brian/taotao/content/service/ContentService.java" />
         <option value="$PROJECT_DIR$/taotao-portal-web/src/main/java/com/brian/taotao/portal/pojo/AD1Node.java" />
         <option value="$PROJECT_DIR$/taotao-portal-web/src/main/java/com/brian/taotao/portal/controller/IndexController.java" />
@@ -179,12 +236,10 @@
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/dao/SearchItemMapper.java" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-tx.xml" />
-        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml" />
         <option value="$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchItem.java" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/elasticsearch/EsUtils.java" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/elasticsearch/EsClientBuilder.java" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-es.xml" />
-        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java" />
         <option value="$PROJECT_DIR$/taotao-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/index-manage.jsp" />
@@ -194,12 +249,23 @@
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/brian/taotao/controller/IndexManageController.java" />
         <option value="$PROJECT_DIR$/taotao-search-web/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-search-web/src/main/resources/properties/config.properties" />
-        <option value="$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/taotao-search-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/elasticsearch/EsClient.java" />
         <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/mapper/SearchItemMapper.xml" />
-        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/base-v1.js" />
+        <option value="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/base-v1.js" />
+        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java" />
+        <option value="$PROJECT_DIR$/taotao-search/taotao-search-interface/src/main/java/com/brian/taotao/search/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/taotao-search-web/src/main/webapp/jsp/search.jsp" />
+        <option value="$PROJECT_DIR$/taotao-search-web/src/main/java/com/brian/taotao/search/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/search_main.js" />
+        <option value="$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/search_main.js" />
       </list>
     </option>
   </component>
@@ -233,8 +299,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2320" />
-    <option name="y" value="-495" />
+    <option name="x" value="-2414" />
+    <option name="y" value="-482" />
     <option name="width" value="2094" />
     <option name="height" value="1164" />
   </component>
@@ -272,6 +338,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -281,18 +348,25 @@
             </path>
             <path>
               <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-common" type="616d4139:PackageViewModuleNode" />
-              <item name="com.brian.taotao.common" type="1f31426a:PackageElementNode" />
+              <item name="taotao-content-service" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
               <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-common" type="616d4139:PackageViewModuleNode" />
-              <item name="com.brian.taotao.common" type="1f31426a:PackageElementNode" />
-              <item name="utils" type="1f31426a:PackageElementNode" />
+              <item name="taotao-content-service" type="616d4139:PackageViewModuleNode" />
+              <item name="com.brian.taotao" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-dao" type="616d4139:PackageViewModuleNode" />
+              <item name="taotao-content-service" type="616d4139:PackageViewModuleNode" />
+              <item name="com.brian.taotao" type="1f31426a:PackageElementNode" />
+              <item name="content" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-content-service" type="616d4139:PackageViewModuleNode" />
+              <item name="com.brian.taotao" type="1f31426a:PackageElementNode" />
+              <item name="content" type="1f31426a:PackageElementNode" />
+              <item name="service.impl" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
@@ -337,6 +411,15 @@
               <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
               <item name="spring" type="1f31426a:PackageElementNode" />
             </path>
+            <path>
+              <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-portal-web" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-portal-web" type="616d4139:PackageViewModuleNode" />
+              <item name="com.brian.taotao.portal" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -372,23 +455,6 @@
               <item name="taotao-manager-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taotao" type="462c0819:PsiDirectoryNode" />
-              <item name="taotao-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taotao" type="462c0819:PsiDirectoryNode" />
-              <item name="taotao-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,7 +477,72 @@
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-portal-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-portal-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-portal-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-portal-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-portal-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
               <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
@@ -492,7 +623,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
@@ -500,9 +631,26 @@
               <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
               <item name="taotao-search-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
@@ -536,7 +684,8 @@
               <item name="taotao-search-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
@@ -545,7 +694,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
@@ -564,52 +712,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taotao" type="462c0819:PsiDirectoryNode" />
-              <item name="taotao-search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.2.8" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.2.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.2.8.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.2.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.2.8.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taotao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.2.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.2.8.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
-              <item name="type" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Tests">
           <expand>
@@ -626,6 +733,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -661,7 +769,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.web">
+  <component name="RunManager" selected="Tomcat Server.portal-web">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -708,19 +816,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestItem.queryItemDescById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ElasticsearchTest.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.brian.taotao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="taotao-manager-service" />
+      <module name="taotao-search-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.brian.taotao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.brian.taotao.test.TestItem" />
-      <option name="METHOD_NAME" value="queryItemDescById" />
+      <option name="MAIN_CLASS_NAME" value="com.brian.taotao.test.ElasticsearchTest" />
+      <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1012,7 +1120,6 @@
       </method>
     </configuration>
     <configuration name="portal-web" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.50" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="taotao-portal-web:war exploded">
@@ -1024,7 +1131,7 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_taotao_3" />
         <option name="HTTP_PORT" value="8082" />
-        <option name="JNDI_PORT" value="1097" />
+        <option name="JNDI_PORT" value="1100" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1325,19 +1432,19 @@
       <item index="3" class="java.lang.String" itemvalue="Tomcat Server.web" />
       <item index="4" class="java.lang.String" itemvalue="Tomcat Server.portal-web" />
       <item index="5" class="java.lang.String" itemvalue="Tomcat Server.content-service" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestItem.queryItemDescById" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedis" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisPool" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisClient" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testBulk" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedis" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisPool" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisClient" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testBulk" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testSearch" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testBulk" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisClient" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisPool" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedis" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestItem.queryItemDescById" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testSearch" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ElasticsearchTest.testBulk" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisClient" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedisPool" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestJedis.testJedis" />
       </list>
     </recent_temporary>
   </component>
@@ -1360,34 +1467,35 @@
       <workItem from="1525225137287" duration="17749000" />
       <workItem from="1525255772884" duration="94000" />
       <workItem from="1525255961571" duration="1676000" />
-      <workItem from="1525262140116" duration="45588000" />
+      <workItem from="1525262140116" duration="47556000" />
+      <workItem from="1525919317226" duration="4997000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ElasticsearchTest_testBulk - 2018.05.07 at 18h 22m 00s.xml">
-      <configuration name="ElasticsearchTest.testBulk" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 00m 42s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ElasticsearchTest_testBulk - 2018.05.07 at 18h 23m 16s.xml">
-      <configuration name="ElasticsearchTest.testBulk" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 01m 49s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ElasticsearchTest_testBulk - 2018.05.07 at 18h 25m 06s.xml">
-      <configuration name="ElasticsearchTest.testBulk" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 02m 30s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ElasticsearchTest_testBulk - 2018.05.07 at 18h 25m 42s.xml">
-      <configuration name="ElasticsearchTest.testBulk" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 03m 12s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ElasticsearchTest_testBulk - 2018.05.07 at 18h 26m 49s.xml">
-      <configuration name="ElasticsearchTest.testBulk" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 04m 53s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJedis_testJedis - 2018.05.04 at 10h 03m 35s.xml">
-      <configuration name="TestJedis.testJedis" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 08m 09s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJedis_testJedis - 2018.05.04 at 10h 03m 41s.xml">
-      <configuration name="TestJedis.testJedis" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 10m 05s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJedis_testJedisClient - 2018.05.04 at 11h 11m 43s.xml">
-      <configuration name="TestJedis.testJedisClient" configurationId="JUnit" />
+    <history-entry file="ElasticsearchTest_testSearch - 2018.05.10 at 11h 14m 16s.xml">
+      <configuration name="ElasticsearchTest.testSearch" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestJedis_testJedisClient - 2018.05.04 at 11h 12m 36s.xml">
       <configuration name="TestJedis.testJedisClient" configurationId="JUnit" />
@@ -1397,11 +1505,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83055000" />
+    <option name="totallyTimeSpent" value="90020000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2320" y="-495" width="2094" height="1164" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2414" y="-482" width="2094" height="1164" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31739962" sideWeight="0.5019493" order="7" side_tool="true" content_ui="tabs" />
@@ -1420,11 +1527,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31739962" sideWeight="0.4980507" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31739962" sideWeight="0.4980507" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21637426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21832359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1486,129 +1593,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="86" column="21" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="86" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/mybatis/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/properties/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/properties/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#276#277#0" expanded="false" />
-            <element signature="e#309#310#0" expanded="false" />
-            <element signature="e#359#360#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#571#572#0" expanded="false" />
-            <element signature="e#616#617#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#745#746#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/dao/SearchItemMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-dao/src/main/resources/mapper/ContentCategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <marker date="1525315308821" expanded="true" signature="3789:3903" ph="select from tb_content_category" />
-            <marker date="1525315308821" expanded="true" signature="3986:4054" ph="delete from tb_content_category... " />
-            <marker date="1525315308821" expanded="true" signature="4164:4195" ph="delete from tb_content_category... " />
-            <marker date="1525315308821" expanded="true" signature="6529:6569" ph="select count... tb_content_category" />
-            <marker date="1525315308821" expanded="true" signature="7799:8233" ph="update tb_content_category... " />
-            <marker date="1525315308821" expanded="true" signature="8450:9187" ph="update tb_content_category... " />
-            <marker date="1525315308821" expanded="true" signature="9293:9674" ph="update tb_content_category... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/transport/6.2.3/transport-6.2.3.jar!/org/elasticsearch/transport/client/PreBuiltTransportClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.2.3/elasticsearch-6.2.3.jar!/org/elasticsearch/client/transport/TransportClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.2.3/elasticsearch-6.2.3.jar!/org/elasticsearch/client/Client.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1616,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,7 +1611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1632,7 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1640,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="361" column="21" lean-forward="true" selection-start-line="361" selection-start-column="21" selection-end-line="361" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,7 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,7 +1639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3263">
           <caret line="202" column="25" lean-forward="false" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,7 +1646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,71 +1661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-472">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <marker date="1525662262287" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1525662262287" expanded="false" signature="153:1464" ph="..." />
-            <marker date="1525662262287" expanded="false" signature="1952:1963" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="2043:2049" ph=" }" />
-            <marker date="1525662262287" expanded="true" signature="2148:2954" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="3054:6952" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="4284:4396" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="4701:4813" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="5201:5302" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="6977:6984" ph="{}" />
-            <marker date="1525662262287" expanded="true" signature="7064:7157" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="7244:7335" ph="{...}" />
-            <marker date="1525662262287" expanded="false" signature="7363:7374" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7389:7395" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="7426:7437" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7456:7462" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="7492:7503" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7584:7590" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="7619:7630" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7709:7715" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="7742:7753" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7828:7834" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="7864:7875" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="7938:7944" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="8001:8012" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="8033:8039" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="8070:8081" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="8109:8115" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="8154:8165" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="8228:8234" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="8284:8295" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="8315:8321" ph=" }" />
-            <marker date="1525662262287" expanded="true" signature="8406:8529" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="8591:9343" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="9406:10279" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="10354:14638" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="10941:11038" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="11135:11234" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="11333:11406" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="11498:11597" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="11725:11958" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="12018:12630" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="12697:13153" ph="{...}" />
-            <marker date="1525662262287" expanded="true" signature="13223:13351" ph="{...}" />
-            <marker date="1525662262287" expanded="false" signature="13385:13400" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13418:13428" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13461:13476" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13493:13503" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13534:13549" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13564:13574" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13610:13625" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13654:13664" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13703:13718" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13737:13747" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13784:13799" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13817:13827" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13859:13874" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13892:13902" ph=" }" />
-            <marker date="1525662262287" expanded="false" signature="13938:13953" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="13973:13983" ph=" }" />
-            <marker date="1525662262287" expanded="true" signature="14086:14543" ph="{...}" />
-            <marker date="1525662262287" expanded="false" signature="14577:14592" ph=" { " />
-            <marker date="1525662262287" expanded="false" signature="14622:14632" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1756,30 +1672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-es.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="93" lean-forward="false" selection-start-line="76" selection-start-column="93" selection-end-line="76" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2346#2358#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/jsp/index-manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1795,7 +1691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1811,7 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1839,27 +1733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/properties/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/properties/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="19" column="76" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,8 +1769,8 @@
         <state relative-caret-position="493">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="false" />
+            <element signature="e#1360#1361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1902,31 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="222" column="29" lean-forward="false" selection-start-line="222" selection-start-column="29" selection-end-line="222" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/brian/taotao/controller/IndexManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1934,33 +1786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="38" column="87" lean-forward="false" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1968,6 +1793,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
           <folding />
         </state>
       </provider>
@@ -1982,11 +1814,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-dao.xml">
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+        <state relative-caret-position="1403">
+          <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/brian/taotao/controller/IndexManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-content/taotao-content-service/src/main/java/com/brian/taotao/content/service/impl/ContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/base-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <marker date="1525919601739" expanded="true" signature="6815:6848" ph="..." />
+            <marker date="1525919601739" expanded="true" signature="7092:7106" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/webapp/jsp/commons/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/webapp/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1076">
+          <caret line="72" column="105" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/test/java/com/brian/taotao/test/ElasticsearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="128" column="23" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="128" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-common/src/main/java/com/brian/taotao/common/pojo/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="38" column="87" lean-forward="false" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/webapp/jsp/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/properties/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/base-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <marker date="1525920872903" expanded="true" signature="6815:6848" ph="..." />
+            <marker date="1525920872903" expanded="true" signature="7092:7106" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-es.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-interface/src/main/java/com/brian/taotao/search/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/java/com/brian/taotao/search/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search/taotao-search-service/src/main/java/com/brian/taotao/search/service/impl/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1677#1689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/webapp/js/search_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="1288" column="44" lean-forward="false" selection-start-line="1288" selection-start-column="44" selection-end-line="1288" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-search-web/src/main/webapp/js/search_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4587">
+          <caret line="1284" column="24" lean-forward="true" selection-start-line="1284" selection-start-column="24" selection-end-line="1284" selection-end-column="24" />
+          <folding>
+            <marker date="1525923814562" expanded="true" signature="32686:32703" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="33842:33859" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="39259:39272" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="39391:39404" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="39523:39536" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="61732:61738" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="61738:61744" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="61755:61761" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="61761:61767" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="61767:61773" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="61773:61779" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="69079:69186" ph="..." />
+            <marker date="1525923814562" expanded="true" signature="103064:103068" ph="&amp;lt;" />
+            <marker date="1525923814562" expanded="true" signature="103364:103368" ph="&amp;gt;" />
+            <marker date="1525923814562" expanded="true" signature="103727:103733" ph="&amp;nbsp;" />
+            <marker date="1525923814562" expanded="true" signature="104262:104266" ph="&amp;lt;" />
+            <marker date="1525923814562" expanded="true" signature="104562:104566" ph="&amp;gt;" />
+            <marker date="1525923814562" expanded="true" signature="104925:104931" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2045,7 +2076,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|taotao-search-web</last-edited>
+          <last-edited>Spring|taotao-content-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
