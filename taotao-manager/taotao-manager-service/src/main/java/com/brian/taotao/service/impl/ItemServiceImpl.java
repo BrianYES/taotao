@@ -5,7 +5,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+import javax.jms.Topic;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import com.brian.taotao.common.pojo.EasyUIDataGridResult;
@@ -36,6 +45,12 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     private ItemParamItemMapper itemParamItemMapper;
 
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
+    @Resource(name = "itemAddTopic")
+    private Topic itemAddTopic;
+
     public Item getItemById(long itemId) {
         return itemMapper.selectByPrimaryKey(itemId);
     }
@@ -55,7 +70,7 @@ public class ItemServiceImpl implements ItemService {
      * 添加商品
      */
     public TaotaoResult addItem(Item item, String desc) {
-        long itemId = IDUtil.itemID();
+        final long itemId = IDUtil.itemID();
         item.setId(itemId);
         // 商品状态 1：正常 2：下架 3：删除
         item.setStatus((byte) 1);
@@ -70,6 +85,14 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setCreated(now);
         itemDesc.setUpdated(now);
         itemDescMapper.insert(itemDesc);
+
+        // 发送商品添加通知
+        jmsTemplate.send(itemAddTopic, new MessageCreator() {
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(String.valueOf(itemId));
+                return textMessage;
+            }
+        });
 
         return TaotaoResult.ok();
     }

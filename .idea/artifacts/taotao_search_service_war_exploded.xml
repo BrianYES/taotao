@@ -99,6 +99,7 @@
           <element id="library" level="project" name="Maven: org.elasticsearch.plugin:percolator-client:6.2.3" />
           <element id="library" level="project" name="Maven: org.elasticsearch.plugin:parent-join-client:6.2.3" />
           <element id="library" level="project" name="Maven: org.elasticsearch.plugin:rank-eval-client:6.2.3" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.11.2" />
           <element id="archive" name="taotao-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-common" />
           </element>

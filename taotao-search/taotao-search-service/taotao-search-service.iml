@@ -7,6 +7,7 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-dao.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-service.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-es.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext-activemq.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -142,6 +143,7 @@
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:6.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:6.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:rank-eval-client:6.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.11.2" level="project" />
     <orderEntry type="module" module-name="taotao-common" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />

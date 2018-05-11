@@ -90,14 +90,11 @@ public class ElasticsearchTest {
 
     @Test
     public void testAdd() throws IOException {
-        XContentBuilder source = XContentFactory.jsonBuilder()
-                .startObject()
-                    .field("userName", "张三")
-                    .field("sendDate", new Date())
-                    .field("msg", "你好李四")
-                .endObject();
+        String json = "{\"id\":\"152602794299876\",\"title\":\"iPhone15\",\"sellPoint\":\"iPhone15\",\"price\":838800,\"image\":\"http://p7vuu5nv4.bkt.clouddn.com/1526024933933.jpg\",\"categoryName\":\"手机\",\"itemDesc\":\"iPhoneXXXXX\"}";
 
-        IndexResponse response = client.prepareIndex("msg", "tweet", "2").setSource(source).get();
+        IndexResponse response = client.prepareIndex("taotao", "item").setId("152602794299876").setSource(json,
+                XContentType.JSON)
+                .get();
 
         System.out.println("索引名称:" + response.getIndex() + "\n类型:" + response.getType()
                 + "\n文档ID:" + response.getId() + "\n当前实例状态:" + response.status());

@@ -18,4 +18,13 @@
         LEFT JOIN tb_item_desc AS d ON i.id = d.item_id
         WHERE i.status = 1
     </select>
+
+    <select id="getItemById" parameterType="long" resultMap="BaseResultMap">
+        SELECT i.id, i.title, i.sell_point, i.price, i.image, c.name AS category_name, d.item_desc
+        FROM tb_item AS i
+        LEFT JOIN tb_item_cat AS c ON i.cid = c.id
+        LEFT JOIN tb_item_desc AS d ON i.id = d.item_id
+        WHERE i.status = 1
+        AND i.id = #{itemId}
+    </select>
 </mapper>
