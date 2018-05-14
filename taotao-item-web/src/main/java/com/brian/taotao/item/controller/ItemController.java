@@ -29,7 +29,7 @@ public class ItemController {
         TaotaoResult itemDesc = itemService.getItemDescById(itemId);
 
         model.addAttribute("item", item);
-        model.addAttribute("itemDesc", itemDesc);
+        model.addAttribute("itemDesc", itemDesc.getData());
 
         return "item";
     }
