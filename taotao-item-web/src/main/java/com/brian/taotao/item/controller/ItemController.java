@@ -23,7 +23,7 @@ public class ItemController {
         String image = item.getImage();
         if (image != null && !"".equals(image)) {
             String[] strings = image.split(",");
-//            model.addAttribute("item.images", strings);
+            model.addAttribute("images", strings);
         }
 
         TaotaoResult itemDesc = itemService.getItemDescById(itemId);
